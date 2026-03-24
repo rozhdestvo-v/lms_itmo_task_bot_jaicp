@@ -16,6 +16,7 @@ theme: /
 
     state: currency
         q!: *currency
+        q!: *(валю*/курс/рубл*/доллар*)
         a: Курс валют: доллар — 90 руб., евро — 100 руб.
 
     state: NoMatch
