@@ -1,5 +1,5 @@
 require: slotfilling/slotFilling.sc
-  module = sys.zb-common
+    module = sys.zb-common
 theme: /
 
     state: Start
@@ -7,12 +7,19 @@ theme: /
         a: Начнём.
 
     state: Hello
-        intent!: /привет
-        a: Привет привет
+        q!: $regex</hello>
+        q!: $regex</Hello>
+        a: Привет! Чем могу помочь?
 
-    state: Bye
-        intent!: /пока
-        a: Пока пока
+    state: Weather
+        q!: $regex</weather>
+        q!: $regex</Weather>
+        a: Погода сегодня отличная, солнечно!
+
+    state: Currency
+        q!: $regex</currency>
+        q!: $regex</Currency>
+        a: Курс валют: доллар — 90 руб., евро — 100 руб.
 
     state: NoMatch
         event!: noMatch
