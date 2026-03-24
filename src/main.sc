@@ -4,17 +4,17 @@ theme: /
         q!: *start
         a: Начнём.
 
-    state: Hello
+    state: hello
         q!: *hello
         q!: *(привет/здравствуй*/~добрый (~утро/~вечер/~день/~ночь))
         a: Привет! Чем могу помочь?
 
-    state: Weather
+    state: weather
         q!: *weather
         q!: *(погод*/дождь/солн*)
         a: Погода сегодня отличная, солнечно!
 
-    state: Currency
+    state: currency
         q!: *currency
         a: Курс валют: доллар — 90 руб., евро — 100 руб.
 
